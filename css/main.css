@@ -1,12 +1,12 @@
 /* Main CSS Document for Lesley's site - this contains the bootstrap overrides that
 make everything preeeeeeety */
-body {font-family: 'Noto Sans', sans-serif;}
+body {font-family: 'Noto Sans', sans-serif; max-width:1200px; margin: auto; background-color: #334051;}
 h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 900;}
-
-.jumbotron {background-image:url('../images/workshop2.jpg'); background-size: 100%}
+.bodycontainer{ background-color: #ffffff; box-shadow: 1px 3px 10px #000000; }
+.jumbotron {background-image:url('../images/workshop2.jpg'); background-size: 100%;}
 .headertext {color: #ffffff; margin:0 0 0 0; text-shadow: 1px 1px 3px #000000; background-color: rgba(50,50,50, .6); width:100%; font-weight: 900;}
 .footer {background-image:url('../images/workshop2.jpg'); background-size:100%; padding:20px; text-align: right; font-weight: bold; color: #e7e7e7; font-size:.7em; text-shadow: 1px 1px #000000;}
-
+.nav-pills li a {margin-left:3px;}
 /*  CSS UTILITIES MAKE THE GANGLIA TWITCH */
 
 /*THESE ARE FOR SHOWING AND HIDING ELEMENTS BASED ON SCREEN SIZE*/
