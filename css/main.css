@@ -1,0 +1,30 @@
+/* Main CSS Document for Lesley's site - this contains the bootstrap overrides that
+make everything preeeeeeety */
+body {font-family: 'Noto Sans', sans-serif;}
+h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 900;}
+
+.jumbotron {background-image:url('../images/workshop2.jpg'); background-size: 100%}
+.headertext {color: #ffffff; margin:0 0 0 0; text-shadow: 1px 1px 3px #000000; background-color: rgba(50,50,50, .6); width:100%; font-weight: 900;}
+.footer {background-image:url('../images/workshop2.jpg'); background-size:100%; padding:20px; text-align: right; font-weight: bold; color: #e7e7e7; font-size:.7em; text-shadow: 1px 1px #000000;}
+
+/*  CSS UTILITIES MAKE THE GANGLIA TWITCH */
+
+/*THESE ARE FOR SHOWING AND HIDING ELEMENTS BASED ON SCREEN SIZE*/
+
+/*medium+ screen sizes*/
+@media (min-width:768px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+/*small screen sizes */
+@media (max-width: 768px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
