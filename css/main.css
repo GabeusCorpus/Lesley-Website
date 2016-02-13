@@ -1,6 +1,6 @@
 /* Main CSS Document for Lesley's site - this contains the bootstrap overrides that
 make everything preeeeeeety */
-body {font-family: 'Noto Sans', sans-serif; max-width:1200px; margin: auto; background-color: #334051;}
+body {font-family: 'Noto Sans', sans-serif;  margin: auto; background-color: #334051;}
 h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 900;}
 .bodycontainer{ background-color: #ffffff; box-shadow: 1px 3px 10px #000000; }
 .jumbotron {background-image:url('../images/workshop2.jpg'); background-size: 100%;}
@@ -9,10 +9,17 @@ h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 9
 .nav-pills li a {margin-left:3px;}
 /*  CSS UTILITIES MAKE THE GANGLIA TWITCH */
 
-/*THESE ARE FOR SHOWING AND HIDING ELEMENTS BASED ON SCREEN SIZE*/
+/*MEDIA QUERIES FOR CENTERING CONTENT AND SHOWING AND HIDING ELEMENTS BASED ON SCREEN SIZE*/
+@media (min-width: 1199px){
+	body{ max-width:1180px;}
+	}
+@media (max-width: 1199px) and (min-width: 992px){
+	body{ max-width:1000px;}
+	}
 
 /*medium+ screen sizes*/
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width: 992px) {
+	body{ max-width:800px;}
     .desktop-only {
         display:block !important;
     }
@@ -20,6 +27,7 @@ h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 9
  
 /*small screen sizes */
 @media (max-width: 768px) {
+body{ max-width:550px;}
     .mobile-only {
         display:block !important;
     }
