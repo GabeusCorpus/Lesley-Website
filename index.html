@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!-- 
+
+Caught you looking! Thanks for dropping by. 
+
+This page is fairly vanilla bootstrap with etsy and facebook out-of-the-box integrations varying by the different breakpoints.
+We needed a quick replacement for the old, gnarly version of the site so I knocked this out over a day or so. 
+
+Enjoy! 
+-Gabriel 
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -55,23 +65,34 @@ Lesley's work is available at shows and retailers around the Tampa Bay area and 
 		<div class="col-md-12">
 			<div class="tab-content">
 				<div role="tabpanel" id="shop" class="tab-pane  active"><h2>Shop Online at Etsy</h2>
-<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
-<div class="hidden-sm hidden-md hidden-lg">
-<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',2,4,1,'https://www.etsy.com');</script>
+	<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
+<div class="teeny-only">
+	<script type='text/javascript'>new Etsy.Mini(5272560,'thumbnail',3,5,1,'https://www.etsy.com');</script>
+</div>
+<div class="mobile-only">
+	<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',2,4,1,'https://www.etsy.com');</script>
 </div>
 <div class="hidden-xs hidden-md hidden-lg">
-<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',3,4,1,'https://www.etsy.com');</script>
+	<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',3,4,1,'https://www.etsy.com');</script>
 </div>
 <div class="hidden-xs hidden-sm hidden-lg">
-<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',4,4,1,'https://www.etsy.com');</script>
+	<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',4,4,1,'https://www.etsy.com');</script>
 </div>
-
 <div class="hidden-md hidden-sm hidden-xs">
-      					<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',5,3,1,'https://www.etsy.com');</script>
+	<script type='text/javascript'>new Etsy.Mini(5272560,'gallery',5,3,1,'https://www.etsy.com');</script>
  </div>     					
 				</div>
 <div role="tabpanel" id="social" class="tab-pane fade"><h2>Join Lesley on Facebook</h2>
+<div class="teeny-only">
+	<div class="fb-page" data-href="https://www.facebook.com/lesleytinnaro/" data-tabs="timeline" data-width="350" data-small-header="false" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lesleytinnaro/"><a href="https://www.facebook.com/lesleytinnaro/">Lesley Tinnaro Makes Jewelry</a></blockquote></div></div>
+</div>
+<div class="mobile-only">
 	<div class="fb-page" data-href="https://www.facebook.com/lesleytinnaro/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lesleytinnaro/"><a href="https://www.facebook.com/lesleytinnaro/">Lesley Tinnaro Makes Jewelry</a></blockquote></div></div>
+</div>
+<div class="hidden-xs">
+	<div class="fb-page" data-href="https://www.facebook.com/lesleytinnaro/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lesleytinnaro/"><a href="https://www.facebook.com/lesleytinnaro/">Lesley Tinnaro Makes Jewelry</a></blockquote></div></div>
+</div>
+
 </div>				
 				<div role="tabpanel" id="about" class="tab-pane fade">
 					<h2>About Lesley</h2>
@@ -108,7 +129,7 @@ Lesley's work is available at shows and retailers around the Tampa Bay area and 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!-- super fun custom javascripts to make the booty shake --->
+	<!-- super fun custom javascripts because they are awesome --->
 	<script language="Javascript" src="scripts/main.js"></script>
 	<!-- Facebook embed code-->
   <div id="fb-root"></div>
@@ -121,5 +142,4 @@ Lesley's work is available at shows and retailers around the Tampa Bay area and 
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script> <!--End Facebook embed code -->
   </body>
-  
 </html>

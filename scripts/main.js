@@ -15,7 +15,7 @@ $('#tabnav #shop').tab('show');
 	
 
 console.log("Let's get this party started");
- $("#amount").load("https://openapi.etsy.com/v2/listings/active?api_key=u6f1pm6ixmrjlifnxm5xca51");
+ //$("#amount").load("https://openapi.etsy.com/v2/listings/active?api_key=u6f1pm6ixmrjlifnxm5xca51");
  
  
  

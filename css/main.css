@@ -18,6 +18,9 @@ h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 9
     .mobile-only {
         display:none !important;
     }	
+    .teeny-only {
+    	display:none !important;
+    }    
 	}
 @media (max-width: 1199px) and (min-width: 992px){
 	body{ max-width:1000px;}
@@ -27,6 +30,9 @@ h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 9
     .mobile-only {
         display:none !important;
     }	
+    .teeny-only {
+    	display:none !important;
+    }    
 	}
 
 /*medium+ screen sizes*/
@@ -38,10 +44,13 @@ h1,h2,h3 {font-family: 'Roboto Slab', 'Garamond', Georgia, serif; font-weight: 9
     .mobile-only {
         display:none !important;
     }
+    .teeny-only {
+    	display:none !important;
+    }    
 }
  
 /*small screen sizes */
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 767px) {
 body{ max-width:550px;}
     .mobile-only {
         display:block !important;
@@ -49,5 +58,23 @@ body{ max-width:550px;}
  
     .desktop-only {
         display:none !important;
+    }
+    .teeny-only {
+    	display:none !important;
+    }    
+}
+
+/*teeny screen sizes */
+@media (max-width: 500px) {
+body{ max-width:550px;}
+    .mobile-only {
+        display:none !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+    .teeny-only {
+    	display:block !important;
     }
 }
